@@ -19,7 +19,7 @@ Run the application using the following command
 => java -jar -Dspring.profiles.active=stage 'jar file constructed'
 (This will run the prodcuer and consumer)
 
-=>Afterfter the code is up and running you can either test it from the test file or via curl
+=>After the code is up and running you can either test it from the test file or via curl
 curl -X POST http://localhost:8911//producer/produceMessage \
 -d '{
 	"content": "aaa some value",
