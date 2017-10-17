@@ -43,7 +43,7 @@ ConsumerService : consumes message on the basis of ordering
 ProducerService : produces json messages
 
 RouterService => Responsible for buffering the produced message and invoking consumer handlers on message arrival. 
-Uses thread for listening to messages in the buffer and passing onto the consumers which goes to sleep once all the messages in the buffer are consumed and will wake up after every 1s to check for new messages in the buffer. 
+Uses separate thread for listening to messages in the buffer and passing onto the consumers which goes to sleep once all the messages in the buffer are consumed and will wake up after every 1s to check for new messages in the buffer. 
 
 Model
 
