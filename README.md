@@ -20,6 +20,7 @@ Run the application using the following command
 (This will run the prodcuer and consumer)
 
 =>After the code is up and running you can either test it from the test file or via curl
+
 curl -X POST http://localhost:8911//producer/produceMessage \
 -d '{
 	"content": "aaa some value",
